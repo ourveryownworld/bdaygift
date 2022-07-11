@@ -1,0 +1,388 @@
+ body{
+padding:0;
+margin:  0 2% 0 2%;
+background-color: black;
+}
+.main-container{
+  background-color: #9C9CC4;
+  position: relative;
+  padding-bottom: 12rem;
+  background-image: url(redtreebg.jpg);
+
+  background-size: cover;
+  display: inline-block;
+
+}
+
+ .dropdown{
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  background: #ff0505;
+  padding: 10px 20px 10px 20px;
+  border: solid #fcfcfc 4px;
+  text-decoration: none;
+}
+
+.dropdown:hover {
+  background: #ffffff;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#F37878;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.menu {
+
+  color: black;
+}
+.msg
+{
+    margin: 10% auto 5% 7%;
+    color: white;
+    font-size: 150%;
+    display: inline-block; !important;
+    text-shadow: 2px 2px black;
+    font-family: 'Edu SA Beginner', cursive;
+    text-shadow: 2px 2px black;
+    /* font-weight: bold; */
+
+}
+.container-2 {
+  background-color :  #191A19;
+  display: inline-block;
+  vertical-align: baseline;
+   background-image: url(11415.jpg);
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 5%;
+
+
+}
+.musiclogo {
+
+  padding: auto 2% 7% 0;
+  float: right;
+
+}
+
+.vnmsg{
+  font-size: 200%;
+  margin-right: 20%;
+  margin-left: 2%;
+  color: black;
+  text-shadow: 2px 2px red;
+  font-family: 'Bitter', serif;
+}
+/* this  is where the img slideshow starts */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin-right: 7%;
+
+  border: solid;
+  float: right;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* image slideshow over */
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.dropdownitems{
+    font-size: 300%;
+}
+.container-3{
+  background-color: #FFF2F2;
+  padding-bottom: 15%;
+  display: inline-block;
+}
+.endmsg{
+  font-size: 300%;
+  text-align: center;
+  margin: 10% 5% 30% 5%;
+  font-family: 'Fondamento', cursive;
+
+}
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 400px;
+    background: #000;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: black;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.card .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.card .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.card .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.card .details .center ul li a:hover {
+    background: #ff3636;
+}
+.row{
+  display: inline-block;
+}
+/* typography presets */
+
+body, input{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+a, a:hover{
+  transition: .2s;
+}
+
+/* some resets and general styles */
+
+*{
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* page layout */
+
+body{
+  background: rgb(240, 240, 240);
+  overflow-y: scroll;
+}
+
+::selection{
+  background: rgb(26, 188, 156);
+  color: rgb(255, 255, 255);
+}
+
+::-moz-selection{
+  background: rgb(26, 188, 156);
+  color: rgb(255, 255, 255);
+}
+
+.clear{clear: both;}
+.wrapper{width: 1000px; margin: 0 auto;}
+
+.bl1{
+  background-color: #D18CE0;
+}
+.blh1{
+  font-size: 400%;
+}
+.blh3
+{
+  text-align: center;
+  font-size: 300%;
+}
+.bl2{
+  background-color: #FFCDDD;
+}
+.bllist{
+  font-size: 200%;
+}
+.pbody{
+  background-image: url("poembg.jpg");
+  background-position: cover;
+  height: 400px;
+  font-size: 300%;
+  font-family: 'Edu SA Beginner', cursive;
+}
+.poem{
+  background-color: white;
+  padding-left: 4%;
+}
+.l1{
+  font-size: 150%;
+  font-weight: bolder;
+}
